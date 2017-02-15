@@ -4,7 +4,27 @@
     .class selector
 */
 $(function() {
-    $(".ui-label").click(function() {
-        $(".ui-label").children(".ui-content").slideToggle();
+    $("#yearOneContainer").click(function() {
+        $(".yearOne").slideToggle();
+    });
+});
+$(function() {
+    $("#yearTwoContainer").click(function() {
+        $(".yearTwo").slideToggle();
+    });
+});
+$(function() {
+    $("#yearThreeContainer").click(function() {
+        $(".yearThree").slideToggle();
+    });
+});
+$(function() {
+    $("#yearFourContainer").click(function() {
+        $(".yearFour").slideToggle();
+    });
+});
+$(function() {
+    $("#courseContainer").click(function() {
+        $(".courses").slideToggle();
     });
 });
