@@ -29,12 +29,27 @@ $(function() {
     });
 });
 $(function() {
-    $("#cs_coureses").click(function() {
+    $("#cs_courses").click(function() {
         $("#cs_list").slideToggle();
     });
 });
 $(function() {
-    $("#other_courses").click(function() {
+    $("#other_coureses").click(function() {
         $("#other_list").slideToggle();
+    });
+});
+$(function() {
+    $("#skills").click(function() {
+        $("#skillsContainer").slideToggle();
+    });
+});
+$(function() {
+    $("#languages").click(function() {
+        $("#languages_list").slideToggle();
+    });
+});
+$(function() {
+    $("#tools").click(function() {
+        $("#tools_list").slideToggle();
     });
 });
