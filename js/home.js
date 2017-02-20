@@ -5,26 +5,36 @@
 */
 $(function() {
     $("#yearOneContainer").click(function() {
-        $(".yearOne").slideToggle();
+        $("#yearOne").slideToggle();
     });
 });
 $(function() {
     $("#yearTwoContainer").click(function() {
-        $(".yearTwo").slideToggle();
+        $("#yearTwo").slideToggle();
     });
 });
 $(function() {
     $("#yearThreeContainer").click(function() {
-        $(".yearThree").slideToggle();
+        $("#yearThree").slideToggle();
     });
 });
 $(function() {
     $("#yearFourContainer").click(function() {
-        $(".yearFour").slideToggle();
+        $("#yearFour").slideToggle();
     });
 });
 $(function() {
     $("#courseContainer").click(function() {
-        $(".courses").slideToggle();
+        $("#courses").slideToggle();
+    });
+});
+$(function() {
+    $("#cs_coureses").click(function() {
+        $("#cs_list").slideToggle();
+    });
+});
+$(function() {
+    $("#other_courses").click(function() {
+        $("#other_list").slideToggle();
     });
 });

@@ -1,3 +1,8 @@
+/*Remember
+    #id selector
+    .class selector
+*/
+
 header {
     font-size: 25px;
     text-align: center;
@@ -11,5 +16,13 @@ nav {
     background-color: lightgrey;
 }
 
+.mainContent {
+    background-color: indianred;
+    margin-right: 10%;
+    margin-left: 10%;
+    text-indent: 10px;
+}
 
-/*Selector for id is #*/
+body {
+    background-color: grey;
+}
