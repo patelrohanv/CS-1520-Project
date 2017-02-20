@@ -2,22 +2,32 @@
     <html>
 
     <head>
+        <!-- Compiled and minified Materialize CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+        <!-- Compiled and minified Materialize JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+        <!--  jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- Personal JavaScript -->
         <script src="../js/home.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../css/home.css">
+        <!-- Personal CSS -->
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <title>Rohan Patel: About</title>
     </head>
 
     <body>
-        <header>Rohan Patel</header>
         <nav>
-            | <a href="../index.html">Home</a> |
-            <a href="../pages/about.html">About Me</a> |
-            <a href="../pages/work.html">My Work</a> |
-            <a href="../pages/resume.html"> Resume </a> |
-            <a href="../pages/contact.html">Contact Me</a> |
+            <div class="nav-wrapper">
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/about.html">About Me</a></li>
+                    <li><a href="../pages/work.html">My Work</a></li>
+                    <li><a href="../pages/resume.html"> Resume </a></li>
+                    <li><a href="../pages/contact.html">Contact Me</a></li>
+                </ul>
+            </div>
         </nav>
-        <div>
+        <div class="container">
             <form action="" method="">
                 Name:<br>
                 <input type="text" name="name">
