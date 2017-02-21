@@ -4,5 +4,5 @@
     .class selector
 */
 $('.collapsible').collapsible({
-    accordion: false
+
 });
