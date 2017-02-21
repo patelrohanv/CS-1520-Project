@@ -22,17 +22,32 @@
             </div>
         </nav>
         <div class="container">
-            <form action="" method="">
-                <br>Name:<br>
-                <input type="text" name="name" required>
-                <br>Phone Number: <br>
-                <input type="tel" name="phone" required>
-                <br>Email: <br>
-                <input type="email" name="email" required>
-                <br>Message: <br>
-                <input type="text" name="message"><br>
-                <input type="submit" value="Contact Me" required>
-            </form>
+            <div class="row">
+                <form class="col s12 m4 l8">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                            <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="phone" type="tel" class="validate">
+                            <label for="passphoneword">Phone Number</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
