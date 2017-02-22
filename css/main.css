@@ -7,14 +7,21 @@ nav {}
 
 html {}
 
-body {
-    background-color: mediumpurple;
-}
-
 .collapsible-body {
     background-color: floralwhite;
 }
 
 .collapsible-header {
     font-weight: bold;
+}
+
+body {
+    background-color: mediumpurple;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
 }
