@@ -8,14 +8,20 @@ header {
     text-align: center;
 }
 
-nav {
-    color: mediumpurple;
-    border: 1px solid #555;
-    font-size: 20px;
-    text-align: center;
-    background-color: lightgrey;
-}
+nav {}
+
+html {}
 
 body {
-    background-color: grey;
+    background-color: mediumpurple;
 }
+
+.collapsible-body {
+    background-color: floralwhite;
+}
+
+.collapsible-header {
+    font-weight: bold;
+}
+
+.parallax-container {}

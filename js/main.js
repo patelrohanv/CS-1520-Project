@@ -6,3 +6,7 @@
 $('.collapsible').collapsible({
 
 });
+
+$('.parallax').parallax({
+
+});
