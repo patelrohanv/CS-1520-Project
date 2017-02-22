@@ -10,3 +10,5 @@ $('.collapsible').collapsible({
 $('.parallax').parallax({
 
 });
+
+$(".button-collapse").sideNav();
