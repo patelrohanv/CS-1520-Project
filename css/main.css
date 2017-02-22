@@ -3,11 +3,6 @@
     .class selector
 */
 
-header {
-    font-size: 25px;
-    text-align: center;
-}
-
 nav {}
 
 html {}
@@ -23,5 +18,3 @@ body {
 .collapsible-header {
     font-weight: bold;
 }
-
-.parallax-container {}
