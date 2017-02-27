@@ -29,3 +29,7 @@ main {
 footer {
     background-color: lightgrey;
 }
+
+.parallax-container {
+    height: 250;
+}
