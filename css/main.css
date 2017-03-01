@@ -33,3 +33,7 @@ footer {
 .parallax-container {
     height: 250;
 }
+
+.myInfo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
