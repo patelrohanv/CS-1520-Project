@@ -9,25 +9,27 @@ body {
     flex-direction: column;
 }
 
-header {
-    background-color: lightgrey;
+.nav-wrapper {
+    background-color: #007849 !important;
 }
 
 main {
     flex: 1 0 auto;
-    background-color: mediumpurple;
+    background-color: #0b3c5d;
 }
 
 .collapsible-header {
+    background-color: #1d2731;
+    color: #d9b319;
     font-weight: bold;
 }
 
 .collapsible-body {
-    background-color: floralwhite;
+    background-color: #328cc1;
 }
 
 footer {
-    background-color: lightgrey;
+    background-color: #007849 !important;
 }
 
 .parallax-container {
@@ -35,5 +37,5 @@ footer {
 }
 
 .myInfo {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font: Verdana;
 }
