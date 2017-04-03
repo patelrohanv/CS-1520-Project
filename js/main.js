@@ -3,12 +3,11 @@
     #id selector
     .class selector
 */
-$('.collapsible').collapsible({
+$('.collapsible').collapsible({});
 
-});
 
-$('.parallax').parallax({
-
+$(document).ready(function() {
+    $('.parallax').parallax();
 });
 
 $('.button-collapse').sideNav({

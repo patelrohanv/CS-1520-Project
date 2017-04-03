@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 
 <head>
@@ -11,27 +10,9 @@
 
 <body>
     <header>
-        <div class="navbar-fixed">
-            <nav>
-                <div class="nav-wrapper">
-                    <a href="#" data-activates="mobile-demo" class="button-collapse">Menu</a>
-                    <ul id="nav-mobile" class="left hide-on-med-and-down">
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../pages/about.html">About Me</a></li>
-                        <li><a href="../pages/work.html">My Work</a></li>
-                        <li><a href="../pages/resume.html"> Resume </a></li>
-                        <li><a href="../pages/contact.html">Contact Me</a></li>
-                    </ul>
-                    <ul class="side-nav" id="mobile-demo">
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../pages/about.html">About Me</a></li>
-                        <li><a href="../pages/work.html">My Work</a></li>
-                        <li><a href="../pages/resume.html"> Resume </a></li>
-                        <li><a href="../pages/contact.html">Contact Me</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+        <?php
+            include "../src/page_header.php";
+        ?>
     </header>
     <main>
         <div class="container">
@@ -97,20 +78,9 @@
         </div>
     </main>
     <footer class="page-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Rohan Patel</h5>
-                </div>
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Links</h5>
-                    <ul>
-                        <li><a class="grey-text text-lighten-3" href="https://github.com/patelrohanv">GitHub</a></li>
-                        <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/patelrohanv/">LinkedIn</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <?php
+            include "../src/footer.php";
+        ?>
     </footer>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
