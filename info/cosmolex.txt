@@ -1,0 +1,3 @@
+April 2016 - May 2016
+Tested software efficiency by tracing function calls and data queries in order to determine which calls and queries could more efficient or removed
+Created a Windows Form application to read list of servers (Windows and Linux) to a table that users could automatically log into
