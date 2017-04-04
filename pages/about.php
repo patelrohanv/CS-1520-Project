@@ -24,8 +24,15 @@
                             <span>Elevator Pitch</span>
                         </div>
                         <div class="collapsible-body" class="myInfo">
-                            <span>My name is Rohan Patel. I am currently a senior at the University of Pittsburgh studying computer science and I am on track to finish my degree the summer of 2017. I enjoy learning more about and have a passion for technology;
-                                specifically, how it can be leveraged to advance and how it interects with other industries/fields.
+                            <span>
+                            <?php
+                                $file_handle = fopen("../info/elevator.txt", "r");
+                                while (!feof($file_handle)) {
+                                    $line = fgets($file_handle);
+                                    echo $line;
+                                }
+                                fclose($file_handle);
+                            ?>   
                             </span>
                         </div>
                     </li>
@@ -76,11 +83,16 @@
                         </div>
                         <div class="collapsible-body" class="myInfo">
                             <ul>
-                                <li>Reading</li>
-                                <li>Hiking</li>
-                                <li>History</li>
-                                <li>Religion</li>
-                                <li>Comic Books</li>
+                            <?php
+                                $file_handle = fopen("../info/hobbies.txt", "r");
+                                while (!feof($file_handle)) {
+                                    $line = fgets($file_handle);
+                                    echo "<li>";
+                                    echo $line;
+                                    echo "</li>";
+                                }
+                                fclose($file_handle);
+                            ?>   
                             </ul>
                         </div>
                     </li>

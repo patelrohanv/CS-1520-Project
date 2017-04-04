@@ -28,11 +28,14 @@
                         </div>
                         <div class="collapsible-body" class="myInfo">
                             <span>
-                            Started college at the University of Pittsburgh on a pre-med track planning to do a triple major in Neurosciene,
-                            Philosophy, and History and Philsophy of Science. I realize now that this was an incredibly foolish idea on my part.
-                            During this year I started volunteering at UPMC Shadyside Hospital and did research under Dr. Amit Sethi while he was studying
-                            recovery of movement among stroke patients. I also joined the South Asian Student Association as a Freshman Chair and joined my 
-                            fraternity, Sigma Beta Rho Fraternity Inc. 
+                            <?php
+                                $file_handle = fopen("./info/yearOne.txt", "r");
+                                while (!feof($file_handle)) {
+                                    $line = fgets($file_handle);
+                                    echo $line;
+                                }
+                                fclose($file_handle);
+                            ?>
                             </span>
                         </div>
                     </li>
@@ -42,10 +45,14 @@
                         </div>
                         <div class="collapsible-body" class="myInfo">
                             <span>
-                            This year saw the transition of me from the pre-med track to pursuing something new. I also began working in the Swanson School
-                            of Engineering in the Technology Group working on providing helpdesk support, I first tried out studying
-                            Economics but ultimately decided to switch to Computer Science after re-realized my passion was in technology and that
-                            I enjoyed writing code to solve problems.
+                            <?php
+                                $file_handle = fopen("./info/yearTwo.txt", "r");
+                                while (!feof($file_handle)) {
+                                    $line = fgets($file_handle);
+                                    echo $line;
+                                }
+                                fclose($file_handle);
+                            ?>
                             </span>
                         </div>
                     </li>
@@ -55,7 +62,14 @@
                         </div>
                         <div class="collapsible-body" class="myInfo">
                             <span>
-                            This was my first full school term as a Computer Science major. 
+                            <?php
+                                $file_handle = fopen("./info/yearThree.txt", "r");
+                                while (!feof($file_handle)) {
+                                    $line = fgets($file_handle);
+                                    echo $line;
+                                }
+                                fclose($file_handle);
+                            ?>
                             </span>
                         </div>
                     </li>
@@ -65,8 +79,15 @@
                         </div>
                         <div class="collapsible-body" class="myInfo">
                             <span>
-                            My last year in college. I'm currently in the process of looking for a job after college.
-                        </span>
+                            <?php
+                                $file_handle = fopen("./info/yearFour.txt", "r");
+                                while (!feof($file_handle)) {
+                                    $line = fgets($file_handle);
+                                    echo $line;
+                                }
+                                fclose($file_handle);
+                            ?>    
+                            </span>
                         </div>
                     </li>
                 </ul>
@@ -81,13 +102,16 @@
                         </div>
                         <div class="collapsible-body" class="myInfo">
                             <ul>
-                                <li>Java</li>
-                                <li>C#</li>
-                                <li>Python</li>
-                                <li>C</li>
-                                <li>JavaScript</li>
-                                <li>PHP</li>
-                                <li>SQL</li>
+                            <?php
+                                $file_handle = fopen("./info/programLang.txt", "r");
+                                while (!feof($file_handle)) {
+                                    $line = fgets($file_handle);
+                                    echo "<li>";
+                                    echo $line;
+                                    echo "</li>";
+                                }
+                                fclose($file_handle);
+                            ?>
                             </ul>
                         </div>
                     </li>
@@ -97,11 +121,16 @@
                         </div>
                         <div class="collapsible-body" class="myInfo">
                             <ul>
-                                <li>Git</li>
-                                <li>HTML/CSS</li>
-                                <li>jQuery</li>
-                                <li>Visual Studio</li>
-                                <li>Eclipse</li>
+                            <?php
+                                $file_handle = fopen("./info/tools.txt", "r");
+                                while (!feof($file_handle)) {
+                                    $line = fgets($file_handle);
+                                    echo "<li>";
+                                    echo $line;
+                                    echo "</li>";
+                                }
+                                fclose($file_handle);
+                            ?>                                
                             </ul>
                         </div>
                     </li>
@@ -116,21 +145,16 @@
                         </div>
                         <div class="collapsible-body" class="myInfo">
                             <ul>
-                                <li>INTERMEDIATE PROGRAMMING USING JAVA</li>
-                                <li>DISCRETE STRUCTURES FOR CS</li>
-                                <li>INTRO TO COMPUTER PROGRAMMING WITH JAVA</li>
-                                <li>DATA STRUCTURES</li>
-                                <li>COMPUTER ORGANIZATION & ASSEMBLY LANGUAGE</li>
-                                <li>INTERMEDIATE WEB DESIGN & DEVELOPMENT</li>
-                                <li>INTRO TO SYSTEMS SOFTWARE</li>
-                                <li>SOCIAL IMPLICATION OF COMPUTING TECHNOLOGY</li>
-                                <li>ALGORITHM IMPLEMENTATION</li>
-                                <li>SOFTWARE ENGINEERING</li>
-                                <li>INTRO TO OPERATING SYSTEMS</li>
-                                <li>FORMAL METHODS IN COMPUTER SCIENCE</li>
-                                <li>PROGAMMING LANGUAGES FOR WEB APPLICATIONS</li>
-                                <li>INTRODUCTION TO DATA SCIENCE</li>
-                                <li>SPECIAL TOPICS IN COMPUTER SCIENCE: CLOUD COMPUTING</li>
+                            <?php
+                                $file_handle = fopen("./info/csCourses.txt", "r");
+                                while (!feof($file_handle)) {
+                                    $line = fgets($file_handle);
+                                    echo "<li>";
+                                    echo $line;
+                                    echo "</li>";
+                                }
+                                fclose($file_handle);
+                            ?>    
                             </ul>
                         </div>
                     </li>
@@ -140,33 +164,16 @@
                         </div>
                         <div class="collapsible-body" class="myInfo">
                             <ul>
-                                <li>FOUNDATIONS OF BIOLOGY LAB 1</li>
-                                <li>INTRODUCTION TO PSYCHOLOGY</li>
-                                <li>INTRO MACROECONOMIC THEORY</li>
-                                <li>INTRO MICROECONOMIC THEORY</li>
-                                <li>WESTERN CIVILIZATION 1</li>
-                                <li>INTRO TO WESTERN ART MUSIC</li>
-                                <li>FOUNDATIONS OF BIOLOGY LAB 2</li>
-                                <li>FOUNDATIONS OF BIOLOGY 1</li>
-                                <li>FOUNDATIONS OF BIOLOGY 2</li>
-                                <li>GENERAL CHEMISTRY 1</li>
-                                <li>GENERAL CHEMISTRY 2</li>
-                                <li>ANALYTC GEOMETRY & CALCULUS 1</li>
-                                <li>APPLIED STATISTICAL METHODS</li>
-                                <li>SEMESTER IN COMPOSITION: SERVICE-LEARNING </li>
-                                <li>PHILOSOPHY AND SCIENCE</li>
-                                <li>INTRODUCTION TO LOGIC</li>
-                                <li>HINDI 1</li>
-                                <li>LABOR AND THE ECONOMY</li>
-                                <li>ECON DEVELOPMENT OF THE MENA</li>
-                                <li>SCI-FI: EAST AND WEST</li>
-                                <li>RELIGION IN ASIA</li>
-                                <li>SANSKRIT 1</li>
-                                <li>SANSKRIT 2</li>
-                                <li>INTRO TO INFORMATION, SYSTEMS & SOCIETY</li>
-                                <li>ANALYTC GEOMETRY & CALCULUS 2</li>
-                                <li>BIBLE AS LITERATURE</li>
-                                <li>GREEK TRAGEDY</li>
+                            <?php
+                                $file_handle = fopen("./info/courses.txt", "r");
+                                while (!feof($file_handle)) {
+                                    $line = fgets($file_handle);
+                                    echo "<li>";
+                                    echo $line;
+                                    echo "</li>";
+                                }
+                                fclose($file_handle);
+                            ?>    
                             </ul>
                         </div>
                     </li>
