@@ -24,14 +24,9 @@
                         </div>
                         <div class="collapsible-body" class="myInfo">
                             <?php
-                                $file_handle = fopen("../info/giantEagle.txt", "r");
-                                while (!feof($file_handle)) {
-                                    $line = fgets($file_handle);
-                                    echo "<span>" . $line . "</span>";
-                                    echo "<br>";
-                                    echo "<br>";
-                                }
-                                fclose($file_handle);
+                                include "../src/updateFunctions.php";
+                                $f = "../info/giantEagle.txt";
+                                updateWork($f);
                             ?> 
                         </div>
                     </li>
@@ -41,14 +36,9 @@
                         </div>
                         <div class="collapsible-body" class="myInfo">
                             <?php
-                                $file_handle = fopen("../info/cosmolex.txt", "r");
-                                while (!feof($file_handle)) {
-                                    $line = fgets($file_handle);
-                                    echo "<span>" . $line . "</span>";
-                                    echo "<br>";
-                                    echo "<br>";
-                                }
-                                fclose($file_handle);
+                                include "../src/updateFunctions.php";
+                                $f = "../info/cosmolex.txt";
+                                updateWork($f);
                             ?> 
                         </div>
                     </li>
@@ -58,14 +48,9 @@
                         </div>
                         <div class="collapsible-body" class="myInfo">
                             <?php
-                                $file_handle = fopen("../info/benedum.txt", "r");
-                                while (!feof($file_handle)) {
-                                    $line = fgets($file_handle);
-                                    echo "<span>" . $line . "</span>";
-                                    echo "<br>";
-                                    echo "<br>";
-                                }
-                                fclose($file_handle);
+                                include "../src/updateFunctions.php";
+                                $f = "../info/benedum.txt";
+                                updateWork($f);
                             ?> 
                         </div>
                     </li>

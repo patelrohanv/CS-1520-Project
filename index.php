@@ -13,12 +13,8 @@
         <?php
             include "./src/main_header.php";
         ?>
-        <div class="parallax-container">
-            <div class="parallax"><img src="./images/desk_dark.jpeg"></div>
-        </div>
     </header>
     <main>
-
         <div class="container">
             <div>
                 <ul class="collapsible" data-collapsible="expandable">
@@ -29,12 +25,9 @@
                         <div class="collapsible-body" class="myInfo">
                             <span>
                             <?php
-                                $file_handle = fopen("./info/yearOne.txt", "r");
-                                while (!feof($file_handle)) {
-                                    $line = fgets($file_handle);
-                                    echo $line;
-                                }
-                                fclose($file_handle);
+                                include "./src/updateFunctions.php";
+                                $f = "./info/yearOne.txt";
+                                updateSimple($f);
                             ?>
                             </span>
                         </div>
@@ -46,12 +39,9 @@
                         <div class="collapsible-body" class="myInfo">
                             <span>
                             <?php
-                                $file_handle = fopen("./info/yearTwo.txt", "r");
-                                while (!feof($file_handle)) {
-                                    $line = fgets($file_handle);
-                                    echo $line;
-                                }
-                                fclose($file_handle);
+                                include "./src/updateFunctions.php";
+                                $f = "./info/yearTwo.txt";
+                                updateSimple($f);
                             ?>
                             </span>
                         </div>
@@ -63,12 +53,9 @@
                         <div class="collapsible-body" class="myInfo">
                             <span>
                             <?php
-                                $file_handle = fopen("./info/yearThree.txt", "r");
-                                while (!feof($file_handle)) {
-                                    $line = fgets($file_handle);
-                                    echo $line;
-                                }
-                                fclose($file_handle);
+                                include "./src/updateFunctions.php";
+                                $f = "./info/yearThree.txt";
+                                updateSimple($f);
                             ?>
                             </span>
                         </div>
@@ -80,12 +67,9 @@
                         <div class="collapsible-body" class="myInfo">
                             <span>
                             <?php
-                                $file_handle = fopen("./info/yearFour.txt", "r");
-                                while (!feof($file_handle)) {
-                                    $line = fgets($file_handle);
-                                    echo $line;
-                                }
-                                fclose($file_handle);
+                                include "./src/updateFunctions.php";
+                                $f = "./info/yearFour.txt";
+                                updateSimple($f);
                             ?>    
                             </span>
                         </div>
@@ -103,14 +87,9 @@
                         <div class="collapsible-body" class="myInfo">
                             <ul>
                             <?php
-                                $file_handle = fopen("./info/programLang.txt", "r");
-                                while (!feof($file_handle)) {
-                                    $line = fgets($file_handle);
-                                    echo "<li>";
-                                    echo $line;
-                                    echo "</li>";
-                                }
-                                fclose($file_handle);
+                                include "./src/updateFunctions.php";
+                                $f = "./info/programmingLang.txt";
+                                updateList($f);
                             ?>
                             </ul>
                         </div>
@@ -122,14 +101,9 @@
                         <div class="collapsible-body" class="myInfo">
                             <ul>
                             <?php
-                                $file_handle = fopen("./info/tools.txt", "r");
-                                while (!feof($file_handle)) {
-                                    $line = fgets($file_handle);
-                                    echo "<li>";
-                                    echo $line;
-                                    echo "</li>";
-                                }
-                                fclose($file_handle);
+                                include "./src/updateFunctions.php";
+                                $f = "./info/tools.txt";
+                                updateList($f);
                             ?>                                
                             </ul>
                         </div>
@@ -146,14 +120,9 @@
                         <div class="collapsible-body" class="myInfo">
                             <ul>
                             <?php
-                                $file_handle = fopen("./info/csCourses.txt", "r");
-                                while (!feof($file_handle)) {
-                                    $line = fgets($file_handle);
-                                    echo "<li>";
-                                    echo $line;
-                                    echo "</li>";
-                                }
-                                fclose($file_handle);
+                                include "./src/updateFunctions.php";
+                                $f = "./info/csCourses.txt";
+                                updateList($f);
                             ?>    
                             </ul>
                         </div>
@@ -165,14 +134,9 @@
                         <div class="collapsible-body" class="myInfo">
                             <ul>
                             <?php
-                                $file_handle = fopen("./info/courses.txt", "r");
-                                while (!feof($file_handle)) {
-                                    $line = fgets($file_handle);
-                                    echo "<li>";
-                                    echo $line;
-                                    echo "</li>";
-                                }
-                                fclose($file_handle);
+                                include "./src/updateFunctions.php";
+                                $f = "./info/courses.txt";
+                                updateList($f);
                             ?>    
                             </ul>
                         </div>

@@ -26,12 +26,9 @@
                         <div class="collapsible-body" class="myInfo">
                             <span>
                             <?php
-                                $file_handle = fopen("../info/elevator.txt", "r");
-                                while (!feof($file_handle)) {
-                                    $line = fgets($file_handle);
-                                    echo $line;
-                                }
-                                fclose($file_handle);
+                                include "../src/updateFunctions.php";
+                                $f = "../info/elevator.txt";
+                                updateSimple($f);
                             ?>   
                             </span>
                         </div>
@@ -50,45 +47,24 @@
                                 <li class="prjTitle"> <strong>Steel Hacks 2016</strong></li>
                                 <a class="prjLink" href="https://github.com/patelrohanv/steelhacks2016">Link to Repo</a><br>
                                 <?php
-                                    echo "<span class=\"sideProject\">";
-                                    $file_handle = fopen("../info/steelhacks16.txt", "r");
-                                    while (!feof($file_handle)) {
-                                        $line = fgets($file_handle);
-                                        echo $line;
-                                    }
-                                    fclose($file_handle);
-                                    echo "</span>";
-                                    echo "<br>";
-                                    echo "<br>";
+                                    include "../src/updateFunctions.php";
+                                    $f = "../info/steelhacks16.txt";
+                                    updateProjects($f);
                                 ?> 
                                 <li class="prjTitle"> <strong>Pitt Challenge Hackathon</strong> </li>
                                 <a class="prjLink" href="https://github.com/patelrohanv/PittChallenge2017">Link to Repo</a><br>
                                 <?php
-                                    echo "<span class=\"sideProject\">";
-                                    $file_handle = fopen("../info/pittChallenge.txt", "r");
-                                    while (!feof($file_handle)) {
-                                        $line = fgets($file_handle);
-                                        echo $line;
-                                    }
-                                    fclose($file_handle);
-                                    echo "</span>";
-                                    echo "<br>";
-                                    echo "<br>";
+                                    include "../src/updateFunctions.php";
+                                    $f = "../info/pittChallenge.txt";
+                                    updateProjects($f);
                                 ?>    
                                 <li class="prjTitle"> <strong>Steel Hacks 2017</strong> </li>
                                 <a class="prjLink" href="https://github.com/patelrohanv/steelhacks2017">Link to Repo</a><br>
                                 <a class="prjLink" href="https://devpost.com/software/hack-harassment-for-twitter">Link to DevPost</a><br>
                                 <?php
-                                    echo "<span class=\"sideProject\">";
-                                    $file_handle = fopen("../info/steelHacks17.txt", "r");
-                                    while (!feof($file_handle)) {
-                                        $line = fgets($file_handle);
-                                        echo $line;
-                                    }
-                                    fclose($file_handle);
-                                    echo "</span>";
-                                    echo "<br>";
-                                    echo "<br>";
+                                    include "../src/updateFunctions.php";
+                                    $f = "../info/steelhacks17.txt";
+                                    updateProjects($f);
                                 ?>  
                             </ul>
                         </div>
@@ -105,14 +81,9 @@
                         <div class="collapsible-body" class="myInfo">
                             <ul>
                             <?php
-                                $file_handle = fopen("../info/hobbies.txt", "r");
-                                while (!feof($file_handle)) {
-                                    $line = fgets($file_handle);
-                                    echo "<li>";
-                                    echo $line;
-                                    echo "</li>";
-                                }
-                                fclose($file_handle);
+                                include "../src/updateFunctions.php";
+                                $f = "../info/hobbies.txt";
+                                updateList($f);
                             ?>   
                             </ul>
                         </div>
