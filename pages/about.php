@@ -47,28 +47,49 @@
                         </div>
                         <div class="collapsible-body" class="myInfo">
                             <ul>
-                                <li class="prjTitle"> Steel Hacks 2016</li>
-                                <span class="sideProject"> We worked on a web application to datamine Twitter for certain keywords and populate a map on a webpage
-                                        with where geographically those tweets were being made. This project was done using Python and Javascript.
-                                    </span>
-                                <br><a class="prjLink" href="https://github.com/patelrohanv/steelhacks2016">Link to Repo</a>
-                                <br>
-                                <br>
-                                <li class="prjTitle"> Pitt Challenge Hackathon </li>
-                                <span class="sideProject">We tried to create a web application that would use some simple machine learning and voice recognition to
-                                    fill out a simple form about what precription medicine to take at what interval. We then tried to use a Python script to send 
-                                    the person who filled out that form a reminder to take their medicine. 
-                                    </span>
-                                <br><a class="prjLink" href="https://github.com/patelrohanv/PittChallenge2017">Link to Repo</a>
-                                <br>
-                                <br>
-                                <li class="prjTitle"> Steel Hacks 2017 </li>
-                                <span class="sideProject"> We created a TwitterBot that would search for tweets containing profanity and a video game title.
-                                    We would then sent a message to the user who made that tweet saying to be nicer on the Internet. This Bot won the #HackHarassment 
-                                    category award.        
-                                    </span>
-                                <br><a class="prjLink" href="https://github.com/patelrohanv/steelhacks2017">Link to Repo</a>
-                                <br><a class="prjLink" href="https://devpost.com/software/hack-harassment-for-twitter">Link to DevPost</a>
+                                <li class="prjTitle"> <strong>Steel Hacks 2016</strong></li>
+                                <a class="prjLink" href="https://github.com/patelrohanv/steelhacks2016">Link to Repo</a><br>
+                                <?php
+                                    echo "<span class=\"sideProject\">";
+                                    $file_handle = fopen("../info/steelhacks16.txt", "r");
+                                    while (!feof($file_handle)) {
+                                        $line = fgets($file_handle);
+                                        echo $line;
+                                    }
+                                    fclose($file_handle);
+                                    echo "</span>";
+                                    echo "<br>";
+                                    echo "<br>";
+                                ?> 
+                                <li class="prjTitle"> <strong>Pitt Challenge Hackathon</strong> </li>
+                                <a class="prjLink" href="https://github.com/patelrohanv/PittChallenge2017">Link to Repo</a><br>
+                                <?php
+                                    echo "<span class=\"sideProject\">";
+                                    $file_handle = fopen("../info/pittChallenge.txt", "r");
+                                    while (!feof($file_handle)) {
+                                        $line = fgets($file_handle);
+                                        echo $line;
+                                    }
+                                    fclose($file_handle);
+                                    echo "</span>";
+                                    echo "<br>";
+                                    echo "<br>";
+                                ?>    
+                                <li class="prjTitle"> <strong>Steel Hacks 2017</strong> </li>
+                                <a class="prjLink" href="https://github.com/patelrohanv/steelhacks2017">Link to Repo</a><br>
+                                <a class="prjLink" href="https://devpost.com/software/hack-harassment-for-twitter">Link to DevPost</a><br>
+                                <?php
+                                    echo "<span class=\"sideProject\">";
+                                    $file_handle = fopen("../info/steelHacks17.txt", "r");
+                                    while (!feof($file_handle)) {
+                                        $line = fgets($file_handle);
+                                        echo $line;
+                                    }
+                                    fclose($file_handle);
+                                    echo "</span>";
+                                    echo "<br>";
+                                    echo "<br>";
+                                ?>  
                             </ul>
                         </div>
                     </li>

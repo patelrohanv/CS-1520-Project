@@ -1,0 +1,1 @@
+We created a TwitterBot that would search for tweets containing profanity and a video game title. We would then sent a message to the user who made that tweet saying to be nicer on the Internet. This Bot won the #HackHarassment category award.     

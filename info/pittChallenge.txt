@@ -1,0 +1,1 @@
+We tried to create a web application that would use some simple machine learning and voice recognition to fill out a simple form about what precription medicine to take at what interval. We then tried to use a Python script to send the person who filled out that form a reminder to take their medicine. 

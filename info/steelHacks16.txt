@@ -1,0 +1,1 @@
+We worked on a web application to datamine Twitter for certain keywords and populate a map on a webpage with where geographically those tweets were being made. This project was done using Python and Javascript.
