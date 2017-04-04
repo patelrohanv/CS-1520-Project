@@ -13,6 +13,9 @@
         <?php
             include "./src/main_header.php";
         ?>
+        <div class="parallax-container">
+            <div class="parallax"><img src="./images/code_m.jpeg"></div>
+        </div>
     </header>
     <main>
         <div class="container">
