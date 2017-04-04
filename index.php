@@ -14,7 +14,7 @@
             include "./src/main_header.php";
         ?>
         <div class="parallax-container">
-            <div class="parallax"><img src="./images/desk_dark.jpeg"></div>
+            <div class="parallax"><img src="./images/code_m.jpeg"></div>
         </div>
     </header>
     <main>
