@@ -1,6 +1,14 @@
+<?php include "./src/updateFunctions.php"; ?>
 <html>
 
 <head>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Compiled and minified Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <!-- Personal JavaScript-->
+    <script src="js/main.js"></script>
+    <script src="js/homepage.js"></script>
     <!-- Compiled and minified Materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
     <!-- Personal CSS -->
@@ -20,29 +28,28 @@
     <main>
         <div class="container">
             <div>
-                <ul class="collapsible" data-collapsible="expandable">
+                <ul class="collapsible" data-collapsible="accordion">
                     <li>
-                        <div class="collapsible-header active">
+                        <div class="collapsible-header">
                             <span class="hint">College Year One</span>
                         </div>
                         <div class="collapsible-body" class="myInfo">
                             <span>
                             <?php
-                                include "./src/updateFunctions.php";
-                                $f = "./info/yearOne.txt";
+                                $f = "./info/yearOne.txt"; 
                                 updateSimple($f);
                             ?>
                             </span>
                         </div>
                     </li>
                     <li>
-                        <div class="collapsible-header active">
+                        <div class="collapsible-header">
                             <span>College Year Two</span>
                         </div>
                         <div class="collapsible-body" class="myInfo">
                             <span>
                             <?php
-                                include "./src/updateFunctions.php";
+                                //include "./src/updateFunctions.php";
                                 $f = "./info/yearTwo.txt";
                                 updateSimple($f);
                             ?>
@@ -50,13 +57,13 @@
                         </div>
                     </li>
                     <li>
-                        <div class="collapsible-header active">
+                        <div class="collapsible-header">
                             <span>College Year Three</span>
                         </div>
                         <div class="collapsible-body" class="myInfo">
                             <span>
                             <?php
-                                include "./src/updateFunctions.php";
+                                //include "./src/updateFunctions.php";
                                 $f = "./info/yearThree.txt";
                                 updateSimple($f);
                             ?>
@@ -64,13 +71,13 @@
                         </div>
                     </li>
                     <li>
-                        <div class="collapsible-header active">
+                        <div class="collapsible-header">
                             <span>College Year Four</span>
                         </div>
                         <div class="collapsible-body" class="myInfo">
                             <span>
                             <?php
-                                include "./src/updateFunctions.php";
+                                //include "./src/updateFunctions.php";
                                 $f = "./info/yearFour.txt";
                                 updateSimple($f);
                             ?>    
@@ -82,15 +89,14 @@
 
             <div class="divider"></div>
             <div>
-                <ul class="collapsible" data-collapsible="expandable">
+                <ul class="collapsible" data-collapsible="accordion">
                     <li>
-                        <div class="collapsible-header active">
+                        <div class="collapsible-header">
                             <span>Programming Languages</span>
                         </div>
                         <div class="collapsible-body" class="myInfo">
                             <ul>
                             <?php
-                                include "./src/updateFunctions.php";
                                 $f = "./info/programmingLang.txt";
                                 updateList($f);
                             ?>
@@ -98,13 +104,12 @@
                         </div>
                     </li>
                     <li>
-                        <div class="collapsible-header active">
+                        <div class="collapsible-header">
                             <span>Tools</span>
                         </div>
                         <div class="collapsible-body" class="myInfo">
                             <ul>
                             <?php
-                                include "./src/updateFunctions.php";
                                 $f = "./info/tools.txt";
                                 updateList($f);
                             ?>                                
@@ -115,15 +120,14 @@
             </div>
             <div class="divider"></div>
             <div>
-                <ul class="collapsible active active" data-collapsible="expandable">
+                <ul class="collapsible" data-collapsible="accordion">
                     <li>
-                        <div class="collapsible-header active">
+                        <div class="collapsible-header">
                             <span>Computer Science Courses</span>
                         </div>
                         <div class="collapsible-body" class="myInfo">
                             <ul>
                             <?php
-                                include "./src/updateFunctions.php";
                                 $f = "./info/csCourses.txt";
                                 updateList($f);
                             ?>    
@@ -131,13 +135,12 @@
                         </div>
                     </li>
                     <li>
-                        <div class="collapsible-header active">
+                        <div class="collapsible-header">
                             <span> Courses</span>
                         </div>
                         <div class="collapsible-body" class="myInfo">
                             <ul>
                             <?php
-                                include "./src/updateFunctions.php";
                                 $f = "./info/courses.txt";
                                 updateList($f);
                             ?>    
@@ -153,13 +156,7 @@
             include "./src/footer.php";
         ?>
     </footer>
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <!-- Compiled and minified Materialize JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-    <!-- Personal JavaScript-->
-    <script src="js/main.js"></script>
-    <script src="js/homepage.js"></script>
+    
 </body>
 
 </html>
