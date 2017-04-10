@@ -15,7 +15,24 @@
         ?>
         <div class="parallax-container">
             <div class="parallax"><img src="./images/code_m.jpeg"></div>
-        </div>
+            <br>
+            <img id="headshot" class="circle responsive-img" src="./images/headshot.jpg">
+            <br>
+            <div class="row">
+                <div class="col s12 m4 l2">
+                </div>
+                <div id="elevator" class="col s12 m4 l8">
+                    <p>My name is Rohan Patel; I am a senior at the University of Pittsburgh. I am finishing my degree in Computer Science Summer of 2017. I have a passion for technology and enjoy learning about how it can be leveraged to advance other fields.
+                    </p>
+                </div>
+                <div class="col s12 m4 l2">
+                </div>
+            </div>
+            <div class=" center-align">
+                    <a class="grey darken-2 waves-effect waves-light btn" href="https://www.linkedin.com/in/patelrohanv/">LinkedIn</a>
+                    <a class="grey darken-2 waves-effect waves-light btn" href="https://github.com/patelrohanv">GitHub</a>
+                    <a class="grey darken-2 waves-effect waves-light btn" href="./documents/rohan_resume.pdf">Resume</a>
+            </div>
     </header>
     <main>
 
