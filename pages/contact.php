@@ -18,7 +18,7 @@
     <main>
         <div class="container">
             <div class="row" id="contactForm">
-                <form class="col s12" onsubmit="return contact()">
+                <form class="col s12" onsubmit="../src/formAction.php">
                     <div class="row">
                         <div class="input-field col s6">
                             <input id="first_name" type="text" class="validate">

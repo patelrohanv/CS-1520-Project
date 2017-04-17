@@ -14,7 +14,5 @@
     $conn = mysql_connect("localhost", "$uname", "$pword");
     mysql_select_db("contact", $conn);
 
-    $sql = "INSERT";
-
-    $result = mysql_query($sql, $conn);
+    mysql_query("INSERT INTO contact (first_name, last_name, phone, email, message) VALUES ('$firstName', '$lastName', '$phoneNumber', '$email', '$message')");
     ?>
