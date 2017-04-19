@@ -18,33 +18,33 @@
     <main>
         <div class="container">
             <div class="row" id="contactForm">
-                <form class="col s12" onsubmit="../src/formAction.php">
+                <form class="col s12" action="../src/formAction.php" method="post">
                     <div class="row">
                         <div class="input-field col s6">
-                            <input id="first_name" type="text" class="validate">
+                            <input name="first_name" type="text" class="validate">
                             <label for="first_name">First Name</label>
                         </div>
                         <div class="input-field col s6">
-                            <input id="last_name" type="text" class="validate">
+                            <input name="last_name" type="text" class="validate">
                             <label for="last_name">Last Name</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
-                            <input id="phone" type="tel" class="validate">
+                            <input name="phone" type="tel" class="validate">
                             <label for="passphoneword" data-error="wrong" data-success="right">Phone Number</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
-                            <input id="email" type="email" class="validate">
+                            <input name="email" type="email" class="validate">
                             <label for="email" data-error="wrong" data-success="right">Email</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
-                            <input id="messagae" type="text" class="validate">
-                            <label for="messagae">Message</label>
+                            <input name="message" type="text" class="validate">
+                            <label for="message">Message</label>
                         </div>
                     </div>
                     <div class="row">

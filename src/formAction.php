@@ -11,8 +11,8 @@
 
 
     //make the database connection
-    $conn = mysql_connect("localhost", "$uname", "$pword");
-    mysql_select_db("contact", $conn);
+    $db = mysqli_connect('localhost','$uname','$pword','mysql') or die('Error connecting to MySQL server.');
 
-    mysql_query("INSERT INTO contact (first_name, last_name, phone, email, message) VALUES ('$firstName', '$lastName', '$phoneNumber', '$email', '$message')");
-    ?>
+    $query = "INSERT INTO contact (first_name, last_name, phone, email, message) VALUES ('$firstName', '$lastName', '$phoneNumber', '$email', '$message')";
+    mysqli_query($db, $query) or die('Error querying database.');
+?>
