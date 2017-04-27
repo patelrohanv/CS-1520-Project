@@ -6,13 +6,13 @@
     $message = $_REQUEST["message"];
 
     $uname = "root";
-    $pword = "root";
+    $pword = "";
 
 
 
     //make the database connection
-    $db = mysqli_connect('localhost','$uname','$pword','mysql') or die('Error connecting to MySQL server.');
+    $db = mysqli_connect('localhost','root','','contact') or die('Error connecting to MySQL server.');
 
-    $query = "INSERT INTO contact (first_name, last_name, phone, email, message) VALUES ('$firstName', '$lastName', '$phoneNumber', '$email', '$message')";
+    $query = "INSERT INTO contactform (first_name, last_name, phone, email, message) VALUES ('$firstName', '$lastName', '$phoneNumber', '$email', '$message')";
     mysqli_query($db, $query) or die('Error querying database.');
 ?>
